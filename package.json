@@ -8,7 +8,6 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "build-linter-babel": "npx run-func ./resources/config/helpers/buildLinterConfig.js babel",
         "build-linter-eslint": "npx run-func ./resources/config/helpers/buildLinterConfig.js eslint",
         "build-linter-markdown": "npx run-func ./resources/config/helpers/buildLinterConfig.js markdownlint",
         "build-linter-prettier": "npx run-func ./resources/config/helpers/buildLinterConfig.js prettier",

@@ -36,58 +36,49 @@ const customizer = (objValue, srcValue) => {
 	}
 };
 
-// // Babel.
-// Const babel = () => {
-//     Const fileName = 'babel.config.json';
-//     Const rules = buildLinterConfig({
-//         PathToRules: `${lintersPath}/babel/*.js`
-//     });
-//     StoreData(rules, `${dotfilesPath}/${fileName}`, 'json');
-// };
 
 // ESLint
 const eslint = () => {
 	const fileName = ".eslintrc";
 	const eslintOptions = buildLinterConfig({pathToRules: `${lintersPath}/eslint/{rules,plugins}/*.js`});
-
-	// Console.log(eslintOptions);
-
-	// eslintOptions.extends.push("plugin:prettier/recommended");
-	// eslintOptions.plugins.push("prettier");
 	storeData(eslintOptions, `${dotfilesPath}/${fileName}`, "json");
+};
+
+// Markdownlint.
+const markdownlint = () => {
+	const fileName = ".markdownlint.json";
+	const markdownlintOptions = buildLinterConfig({pathToRules: `${lintersPath}/markdownlint/*.js`});
+	storeData(markdownlintOptions, `${dotfilesPath}/${fileName}`, "json");
+};
+
+// PHP-CS-Fixer.
+const phpCsFixer = () => {
+	const fileName = ".php-cs-fixer-rules.json";
+	const rules = buildLinterConfig({pathToRules: `${lintersPath}/php-cs-fixer/**/*.js`});
+	storeData(rules, `${dotfilesPath}/${fileName}`, "json");
 };
 
 // Prettier
 const prettier = () => {
+	// Yes, I know Prettier isn't technically a linter. Get off my back. XOXO — Nick
 	const fileName = ".prettierrc";
 	const prettierOptions = buildLinterConfig({pathToRules: `${lintersPath}/prettier/{overrides,rules}/*.js`});
 	storeData(prettierOptions, `${dotfilesPath}/${fileName}`, "json");
 };
 
-// // Markdownlint.
-// Const markdownlint = () => {
-//     Const fileName = '.markdownlint.json';
-//     Const markdownlintOptions = buildLinterConfig({
-//         PathToRules: `${lintersPath}/markdownlint/*.js`
-//     });
-//     StoreData(markdownlintOptions, `${dotfilesPath}/${fileName}`, 'json');
-// };
+// Stylelint
+const stylelint = () => {
+	// Yes, I know Prettier isn't technically a linter. Get off my back. XOXO — Nick
+	const fileName = ".stylelintrc";
+	const stylelintOptions = buildLinterConfig({pathToRules: `${lintersPath}/stylelint/*.js`});
+	storeData(stylelintOptions, `${dotfilesPath}/${fileName}`, "json");
+};
 
-// // PHP-CS-Fixer.
-// Const phpCsFixer = () => {
-//     Const fileName = '.php-cs-fixer-rules.json';
-//     Const rules = buildLinterConfig({
-//         PathToRules: `${lintersPath}/php-cs-fixer/**/*.js`
-//     });
-//     StoreData(rules, `${dotfilesPath}/${fileName}`, 'json');
-// };
 
 module.exports = {
-	// Babel,
 	eslint,
-	prettier
-
-	// Markdownlint,
-	// PhpCsFixer
-
+	markdownlint,
+	phpCsFixer,
+	prettier,
+	stylelint
 };
