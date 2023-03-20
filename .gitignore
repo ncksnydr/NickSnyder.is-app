@@ -22,3 +22,5 @@ yarn-error.log
 .markdownlint.json
 .php-cs-fixer-rules.json
 .stylelintrc
+.eslintignore
+.prettierignore
