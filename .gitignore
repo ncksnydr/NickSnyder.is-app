@@ -40,6 +40,10 @@ yarn-error.log
 .prettierignore
 .phpunit.result.cache
 
+# Font files
+# @note SVG only; other formats are ignored below.
+public/assets/fonts/**/*.svg
+
 #   Gitignore.io
 # ------------------------------------------------------------
 ### Audio ###
@@ -166,3 +170,11 @@ Temporary Items
 *.vob
 *.wmv
 *.webm
+
+### Font ###
+*.fnt
+*.fon
+*.otf
+*.ttf
+*.eot
+*.woff
