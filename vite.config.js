@@ -1,41 +1,44 @@
-// TODO Create and connect to a basic database.
+/**
+	*  Vite configuration
+	*  @see https://laravel.com/docs/9.x/vite
+ */
 
+import * as path from 'path';
 import banner from 'vite-plugin-banner';
-import { defineConfig } from 'vite';
+import colors from 'picocolors';
 import laravel from 'laravel-vite-plugin';
-// import vue from '@vitejs/plugin-vue';
 import pkg from './package.json';
-import babel from 'vite-plugin-babel';
+import progress from 'vite-plugin-progress';
+
+import { defineConfig } from 'vite';
+import { viteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
-    plugins: [
-
-        laravel({
-            input: ['resources/css/app.scss', 'resources/js/app.js'],
-            refresh: true,
-        }),
-        // vue({
-        //     template: {
-        //         transformAssetUrls: {
-        //             // The Vue plugin will re-write asset URLs, when referenced
-        //             // in Single File Components, to point to the Laravel web
-        //             // server. Setting this to `null` allows the Laravel plugin
-        //             // to instead re-write asset URLs to point to the Vite
-        //             // server instead.
-        //             base: null,
-
-        //             // The Vue plugin will parse absolute URLs and treat them
-        //             // as absolute paths to files on disk. Setting this to
-        //             // `false` will leave absolute URLs un-touched so they can
-        //             // reference assets in the public directory as expected.
-        //             includeAbsolute: false,
-        //         },
-        //     },
-        // }),
-        // babel(),
-    //     banner(
-    //   `/**\n * name: ${pkg.name}\n * version: v${pkg.version}\n * description: ${pkg.description}\n * author: ${pkg.author}\n * homepage: ${pkg.homepage}\n */`
-    // ),
-    ],
+	resolve: {
+		alias: [
+			{
+				find: '@',
+				replacement: path.resolve(__dirname, 'resources/js/oscillator')
+			}
+		]
+	},
+	plugins: [
+		progress({
+			format: `Time to make this donuts... ${colors.cyan('[:bar]')}:percent (ETA: :eta)`
+		}),
+		laravel({
+			input: [
+				'resources/css/app.scss',
+				'resources/js/app.js'
+			],
+			refresh: true
+		}),
+		viteImageOptimizer({}),
+		banner(`
+			/**
+			  * name: ${pkg.name}
+				* version: v${pkg.version}
+		   */
+		`)
+	]
 });
-
