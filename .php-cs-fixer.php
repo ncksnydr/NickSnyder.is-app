@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 $rulesJson = __DIR__."/.php-cs-fixer-rules.json";
 $rules = '{"@PSR12": true}';
@@ -22,8 +22,11 @@ $finder = PhpCsFixer\Finder::create()
 	->in(__DIR__);
 
 return (new PhpCsFixer\Config())
-	->setUsingCache(true)
-	->setRules($rules)
-	->setIndent("\t")
+	// ->setCacheFile(__DIR__.'/.php-cs-fixer.cache')
+	// ->setUsingCache(true)
+	->setRules([
+		'@PSR12' => true
+	])
+	// ->setIndent("\t")
 	->setLineEnding("\n")
 	->setFinder($finder);
