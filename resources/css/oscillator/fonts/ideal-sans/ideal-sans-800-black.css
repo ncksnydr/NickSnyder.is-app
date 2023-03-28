@@ -1,0 +1,61 @@
+/**
+ * --------------------------------------------------------------------------
+ *   Ideal Sans → Black (800/900)
+ * --------------------------------------------------------------------------
+*/
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-Black.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-Black.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-Black.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-Black.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-Black.svg#IdealSans-Black")
+			format("svg");
+	font-style: normal;
+	font-weight: 800;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-BlackItalic.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-BlackItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-BlackItalic.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-BlackItalic.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-BlackItalic.svg#IdealSans-BlackItalic")
+			format("svg");
+	font-weight: 800;
+	font-style: italic;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-Black.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-Black.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-Black.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-Black.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-Black.svg#IdealSans-Black")
+			format("svg");
+	font-style: normal;
+	font-weight: 900;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-BlackItalic.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-BlackItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-BlackItalic.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-BlackItalic.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-BlackItalic.svg#IdealSans-BlackItalic")
+			format("svg");
+	font-style: italic;
+	font-weight: 900;
+	text-rendering: optimizeLegibility;
+}

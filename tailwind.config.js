@@ -2,7 +2,7 @@
 	*  Tailwind.js → Configuration file
 	*  @see https://tailwindcss.com/docs/guides/laravel
  */
-const tailwindSettingsPath = './resources/css/oscillator/theme';
+const tailwindSettingsPath = './resources/css/oscillator/';
 
 module.exports = {
 	content: [

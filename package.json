@@ -39,6 +39,7 @@
         "picocolors": "^1.0.0",
         "postcss": "^8.4.21",
         "postcss-cli": "^10.1.0",
+        "postcss-css-variables": "^0.18.0",
         "postcss-easings": "^3.0.1",
         "postcss-focus-visible": "^8.0.2",
         "postcss-import": "^15.1.0",

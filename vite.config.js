@@ -11,7 +11,7 @@ import pkg from './package.json';
 import progress from 'vite-plugin-progress';
 
 import { defineConfig } from 'vite';
-import { viteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
 	resolve: {
@@ -33,7 +33,7 @@ export default defineConfig({
 			],
 			refresh: true
 		}),
-		viteImageOptimizer({}),
+		ViteImageOptimizer(),
 		banner(`
 			/**
 			  * name: ${pkg.name}

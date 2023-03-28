@@ -15,44 +15,45 @@
  *  @see https://github.com/dimitrinicolas/postcss-import-ext-glob
  */
 
-const env = process.env.NODE_ENV || 'development'
+const env = process.env.NODE_ENV || 'development';
 const cssNanoRules = {
-  ...require('./resources/config/linters/postcss/plugins/cssnano/globals.js'),
-  ...require(`./resources/linters/postcss/plugins/cssnano/${env}.js`)
-}
+	...require('./resources/config/linters/postcss/cssnano/globals'),
+	...require(`./resources/config/linters/postcss/cssnano/${env}.js`)
+};
 
 module.exports = {
-  plugins: {
-    'postcss-import-ext-glob': {},
-    'postcss-import': {},
-    'tailwindcss/nesting': {},
-    tailwindcss: {},
-    // TODO Add input range to Tailwind.
-    'postcss-input-range': {},
-    // TODO Add easings file to Tailwind.
-    'postcss-easings': {},
-    'postcss-sort-media-queries': {},
-    'webp-in-css/plugin': {
-      webpClass: 'has-webp',
-      noWebpClass: 'no-webp'
-    },
-    autoprefixer: {},
-    'postcss-sorting': {
-      order: [
-        'custom-properties',
-        'dollar-variables',
-        'declarations',
-        'rules',
-        'at-rules'
-      ],
-      'properties-order': 'alphabetical',
-      'unspecified-properties-position': 'top'
-    },
-    cssnano: {
-      preset: [
-        'advanced',
-        cssNanoRules
-      ]
-    }
-  }
-}
+	plugins: {
+		'postcss-import-ext-glob': {},
+		'postcss-import': {},
+		'postcss-css-variables': {},
+		'tailwindcss/nesting': {},
+		'tailwindcss': {},
+		// TODO Add input range to Tailwind.
+		'postcss-input-range': {},
+		// TODO Add easings file to Tailwind.
+		'postcss-easings': {},
+		'postcss-sort-media-queries': {},
+		'webp-in-css/plugin': {
+			webpClass: 'has-webp',
+			noWebpClass: 'no-webp'
+		},
+		'autoprefixer': {},
+		// 'postcss-sorting': {
+		// 	'order': [
+		// 		'custom-properties',
+		// 		'dollar-variables',
+		// 		'declarations',
+		// 		'rules',
+		// 		'at-rules'
+		// 	],
+		// 	'properties-order': 'alphabetical',
+		// 	'unspecified-properties-position': 'top'
+		// },
+		'cssnano': {
+			preset: [
+				'advanced',
+				cssNanoRules
+			]
+		}
+	}
+};
