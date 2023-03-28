@@ -6,6 +6,9 @@
 #   Project → Directories
 # ------------------------------------------------------------
 
+# Temporary → Tailwind config builder
+resources/config/linters/postcss/tailwindcss
+
 # Laravel default
 /node_modules
 /public/build
