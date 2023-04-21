@@ -12,9 +12,11 @@
         "build-linter-markdown": "npx run-func ./resources/config/helpers/buildLinterConfig.js markdownlint",
         "build-linter-prettier": "npx run-func ./resources/config/helpers/buildLinterConfig.js prettier",
         "build-linter-phpcsfixer": "npx run-func ./resources/config/helpers/buildLinterConfig.js phpCsFixer",
-        "build-linter-stylelint": "npx run-func ./resources/config/helpers/buildLinterConfig.js stylelint"
+        "build-linter-stylelint": "npx run-func ./resources/config/helpers/buildLinterConfig.js stylelint",
+        "preview": "vite preview"
     },
     "dependencies": {
+        "enquire.js": "^2.1.6",
         "lodash": "^4.17.19"
     },
     "devDependencies": {
@@ -36,10 +38,10 @@
         "fs": "^0.0.1-security",
         "glob": "^9.3.0",
         "laravel-vite-plugin": "^0.7.2",
+        "normalize.css": "^8.0.1",
         "picocolors": "^1.0.0",
-        "postcss": "^8.4.21",
+        "postcss": "^8.4.23",
         "postcss-cli": "^10.1.0",
-        "postcss-css-variables": "^0.18.0",
         "postcss-easings": "^3.0.1",
         "postcss-focus-visible": "^8.0.2",
         "postcss-import": "^15.1.0",
@@ -57,11 +59,17 @@
         "sharp": "^0.32.0",
         "svgo": "^3.0.2",
         "tailwindcss": "^3.2.7",
+        "terser": "^5.17.1",
         "vite": "^4.0.0",
         "vite-plugin-babel": "^1.1.3",
         "vite-plugin-banner": "^0.7.0",
+        "vite-plugin-clean": "^1.0.0",
+        "vite-plugin-cp": "^1.0.0",
+        "vite-plugin-dynamic-import": "^1.2.7",
         "vite-plugin-image-optimizer": "^1.1.2",
+        "vite-plugin-image-placeholder": "^0.2.6",
         "vite-plugin-progress": "^0.0.6",
+        "vite-plugin-zip-file": "^2.0.0",
         "webp-in-css": "^0.8.0"
     }
 }

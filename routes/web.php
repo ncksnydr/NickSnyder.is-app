@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('singles.home');
+    $data_path = realpath('../resources/assets/data/content.json');
+    $data = json_decode(file_get_contents($data_path));
+    $environment = App::environment();
+
+    return view('home.index', [
+            'globals' => $data->globals,
+            'meta' => $data->meta,
+            'hero' => $data->hero,
+            'projects' => [
+                'live' => $data->projects->live,
+                'archived' => $data->projects->archived
+            ],
+            'about' => $data->about,
+            'contact' => $data->contact
+    ]);
 });

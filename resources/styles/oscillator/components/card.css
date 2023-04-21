@@ -1,0 +1,26 @@
+.card {
+	background-color: theme(colors.white);
+	border: 1px solid theme(colors.gray.200);
+	border-radius: theme(borderRadius.lg);
+	/* margin: 0 1.5% theme(spacing.4); */
+	/* width: 47%; */
+}
+
+.card-data {
+	padding: theme(spacing.8) theme(spacing.6);
+
+	.card-title {
+		font-size: theme(fontSize.xl);
+		font-weight: theme(fontWeight.medium);
+		line-height: 1;
+	}
+
+	.card-description {
+		font-weight: theme(fontWeight.regular);
+		margin-top: theme(spacing.4);
+		em {
+			font-weight: theme(fontWeight.regular);
+		}
+	}
+
+}

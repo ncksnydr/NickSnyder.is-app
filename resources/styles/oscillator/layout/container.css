@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+}
+
+
+body {
+	background-color: theme(colors.stone.50);
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	max-width: theme(maxWidth.7xl);
+	align-items: center;
+	justify-content: space-between;
+	padding: theme(space.6);
+	@media screen(lg) {
+		padding-bottom: theme(space.8);
+		padding-top: theme(space.8);
+	}
+}
+
+.container-grid {
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	max-width: theme(maxWidth.7xl);
+	padding: theme(space.6);
+	@media screen(lg) {
+		padding-bottom: theme(space.8);
+		padding-top: theme(space.8);
+	}
+}

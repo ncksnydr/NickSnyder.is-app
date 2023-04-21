@@ -4,18 +4,19 @@
  */
 
 module.exports = {
-  arrowParens: 'always',
-  bracketSameLine: true,
-  bracketSpacing: true,
-  endOfLine: 'lf',
-  htmlWhitespaceSensitivity: 'css',
-  jsxSingleQuote: true,
-  quoteProps: 'consistent',
-  singleAttributePerLine: true,
-  useTabs: true,
-  vueIndentScriptAndStyle: true,
-  semi: true,
-  singleQuote: false,
-  tabWidth: 2,
-  trailingComma: 'none'
-}
+	arrowParens: 'always',
+	bracketSameLine: true,
+	bracketSpacing: true,
+	endOfLine: 'lf',
+	htmlWhitespaceSensitivity: 'css',
+	jsxSingleQuote: true,
+	plugins: [require('prettier-plugin-tailwindcss')],
+	quoteProps: 'consistent',
+	semi: true,
+	singleAttributePerLine: true,
+	singleQuote: false,
+	tabWidth: 2,
+	trailingComma: 'none',
+	useTabs: true,
+	vueIndentScriptAndStyle: true
+};

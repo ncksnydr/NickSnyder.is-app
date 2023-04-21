@@ -1,0 +1,86 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt { font-family: theme(fontFamily.sans); }
+
+
+body,
+p,
+li,
+dd,
+span,
+em,
+strong { 
+	font-family: theme(fontFamily.serif); 
+	font-weight: theme(fontWeight.regular);
+}
+
+
+
+
+/**
+ *    Navigation items (and variations)
+ * -------------------------------------------------- */
+
+.nav-item {
+	color: theme(colors.slate.700);
+	font-family: theme(fontFamily.sans);
+	font-size: theme(fontSize.sm);
+	font-weight: theme(fontWeight.regular);
+	letter-spacing: theme(letterSpacing.wide);
+	line-height: theme(lineHeight.6);
+}
+
+#mobileMenu .nav-item {
+	@apply -mx-3 block rounded-lg py-2 px-3 leading-7 text-gray-900;
+}
+
+#desktopMenu .nav-item {
+	@apply transition-colors hover:text-primary-500;
+}
+
+
+/**
+ *    Headline
+ * -------------------------------------------------- */
+.headline,
+.h1 {
+	@apply text-3xl lg:text-4xl font-semibold text-primary-900;
+}
+
+
+.subheadline {
+	@apply text-xl mt-6 leading-10 text-primary-900 font-serif font-book;
+}
+
+
+/**
+ *    Copyright/Legal text
+ * -------------------------------------------------- */
+.copyright {
+	@apply leading-5 text-center font-serif text-gray-500 italic;
+	font-size: 0.9375rem;
+}
+
+
+/**
+ *    Category header
+ * -------------------------------------------------- */
+
+.category-header {
+	font-size: theme(fontSize.xs);
+	font-weight: theme("fontWeight.black");
+	letter-spacing: 0.18rem;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.category-credit {
+	font-weight: theme(fontWeight.light);
+	font-size: theme(fontSize.lg);
+	font-style: italic;
+}
