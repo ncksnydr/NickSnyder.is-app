@@ -10,11 +10,16 @@ module.exports = {
 	endOfLine: 'lf',
 	htmlWhitespaceSensitivity: 'css',
 	jsxSingleQuote: true,
-	plugins: [require('prettier-plugin-tailwindcss')],
+	plugins: [
+		'prettier-plugin-css-order',
+		'@trivago/prettier-plugin-sort-imports',
+		'prettier-plugin-tailwindcss'
+	],
 	quoteProps: 'consistent',
 	semi: true,
 	singleAttributePerLine: true,
 	singleQuote: false,
+	importOrderSeparation: true,
 	tabWidth: 2,
 	trailingComma: 'none',
 	useTabs: true,

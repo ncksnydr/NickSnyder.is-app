@@ -93,7 +93,7 @@
  *  Plugins and vendors
  *  @desc Non-theme PostCSS plugins and vendor files.
  * -------------------------------------------------- */
- /** --- PostCSS plugins ------ */
+/** --- PostCSS plugins ------ */
 @import "./oscillator/plugins/easings.css";
 @import "./oscillator/plugins/instagram.css";
 

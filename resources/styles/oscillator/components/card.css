@@ -18,9 +18,9 @@
 	.card-description {
 		font-weight: theme(fontWeight.regular);
 		margin-top: theme(spacing.4);
+
 		em {
 			font-weight: theme(fontWeight.regular);
 		}
 	}
-
 }
