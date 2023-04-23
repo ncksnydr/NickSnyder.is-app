@@ -21,7 +21,33 @@ const buildColorObject = (baseHex, colorArr) => {
 
 // TODO Add muted gray colors (50s) to primary, secondary, and tertiary
 const customHues = {
-	'seagreen': buildColorObject('#2EB7B0', ['#E2F8F7', '#D6F5F3', '#B2ECE9', '#68D9D3', '#3FCFC7', '#2EB7B0', '#238A85', '#175D5A', '#0C312F', '#010404']),
+	'seagreen': buildColorObject('#2EB7B0', [
+		'#E2F8F7',
+		'#D6F5F3',
+		'#B2ECE9',
+		'#68D9D3',
+		'#3FCFC7',
+		'#2EB7B0',
+		'#238A85',
+		'#175D5A',
+		'#0C312F',
+		'#010404'
+	]),
+
+	'seagreenMuted': buildColorObject('#A2BFBE', [
+		'#F7F9F9',
+		'#EBF1F1',
+		'#D2E0E0',
+		'#BAD0CF',
+		'#A2BFBE',
+		'#81A8A7',
+		'#628F8D',
+		'#4B6D6C',
+		'#344C4B',
+		'#1E2B2A',
+		'#121A1A'
+	]),
+
 	'violet': buildColorObject('#836ECD', ['#F8F7FC',	'#EBE7F7',	'#D1C9EC',	'#B7ABE2',	'#9D8CD7',	'#836ECD',	'#5F44BF',	'#4A3497',	'#35266D',	'#211743']),
 	'flamingo': buildColorObject('#F487B6', ['#FDE4EF', '#FBD2E3', '#F7ACCD', '#F487B6', '#EF5497', '#EB2077', '#C1125D', '#8E0D44', '#5A082C', '#270413']),
 	'electric-blue': buildColorObject('#56EEF4', ['#DCFBFD', '#C9FAFB', '#A3F6F9', '#7CF2F6', '#56EEF4', '#21E9F1', '#0DC5CC', '#0A9298', '#066063', '#032D2E']),
@@ -50,6 +76,7 @@ export default {
 	link: customHues.link,
 	pink: customHues.flamingo,
 	primary: customHues.seagreen,
+	primaryMuted: customHues.seagreenMuted,
 	purple: customHues.grape,
 	red: customHues.danger,
 	secondary: customHues.violet,

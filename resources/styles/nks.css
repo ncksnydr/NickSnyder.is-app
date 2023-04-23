@@ -14,13 +14,14 @@
 */
 
 /** --- Normalize.css ------ */
+
 @import "../../node_modules/normalize.css/normalize.css";
 
 /** --- TailwindCSS ------ */
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
 
 /**
  * --------------------------------------------------------------------------
@@ -36,6 +37,7 @@
  *  @desc Interface elements that only require
  *        a single CSS class.
  * -------------------------------------------------- */
+
 @import "./oscillator/elements/block.css";
 @import "./oscillator/elements/box.css";
 @import "./oscillator/elements/button.css";
@@ -49,11 +51,11 @@
 @import "./oscillator/elements/tag.css";
 @import "./oscillator/elements/title.css";
 
-
 /**
  *  Forms
  *  @desc ...still forms.
  * -------------------------------------------------- */
+
 @import "./oscillator/forms/checkbox.css";
 @import "./oscillator/forms/file.css";
 @import "./oscillator/forms/general.css";
@@ -61,12 +63,12 @@
 @import "./oscillator/forms/radio.css";
 @import "./oscillator/forms/textarea.css";
 
-
 /**
  *  Components
  *  @desc Multi-part collections that work together
  *        to serve a purpose.
  * -------------------------------------------------- */
+
 @import "./oscillator/components/breadcrumb.css";
 @import "./oscillator/components/card.css";
 @import "./oscillator/components/dropdown.css";
@@ -78,22 +80,25 @@
 @import "./oscillator/components/panel.css";
 @import "./oscillator/components/tabs.css";
 
-
 /**
  *  Layout
  *  @desc Page structure
  * -------------------------------------------------- */
+
 @import "./oscillator/layout/container.css";
+@import "./oscillator/layout/footer.css";
+@import "./oscillator/layout/header.css";
 @import "./oscillator/layout/media.css";
+@import "./oscillator/layout/page.css";
 @import "./oscillator/layout/section.css";
 @import "./oscillator/layout/tiles.css";
-
 
 /**
  *  Plugins and vendors
  *  @desc Non-theme PostCSS plugins and vendor files.
  * -------------------------------------------------- */
 /** --- PostCSS plugins ------ */
+
 @import "./oscillator/plugins/easings.css";
 @import "./oscillator/plugins/instagram.css";
 

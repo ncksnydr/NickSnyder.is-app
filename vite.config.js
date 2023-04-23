@@ -55,30 +55,27 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
 				],
 				refresh: true
 			})
-			// progress({
-			// 	format: `${colors.white(colors.bold('Building...'))} ${colors.cyan('[:bar]')} :percent`
-			// })
 		]
 	};
 
 	// If the command is 'build', alter the default options.
 	if (command === 'build') {
 		// Add build options.
-		config.build = {
-			assetsDir: './build',
-			manifest: true,
-			minify: 'terser',
-			outDir: './public/assets',
-			sourcemap: true,
-			ssr: false,
-			ssrManifest: true,
-			target: 'modules',
-			terserOptions: {
-				mangle: true,
-				nameCache: {},
-				sourceMap: true
-			}
-		};
+		// config.build = {
+		// 	assetsDir: 'assets/build',
+		// 	manifest: true,
+		// 	minify: 'terser',
+		// 	outDir: './public',
+		// 	sourcemap: true,
+		// 	ssr: false,
+		// 	ssrManifest: true,
+		// 	target: 'modules',
+		// 	terserOptions: {
+		// 		mangle: true,
+		// 		nameCache: {},
+		// 		sourceMap: true
+		// 	}
+		// };
 
 		// // Add plugin to zip and store project files.
 		// config.plugins.push(
