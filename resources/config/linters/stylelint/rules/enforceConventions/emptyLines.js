@@ -6,7 +6,16 @@
 module.exports = {
 	rules: {
 		'at-rule-empty-line-before': ['always', {
-			except: ['after-same-name', 'inside-block', 'blockless-after-same-name-blockless', 'blockless-after-blockless', 'first-nested']
+			except: [
+				'after-same-name',
+				'inside-block',
+				'blockless-after-blockless',
+				'first-nested'
+			],
+			ignore: [
+				'after-comment',
+				'first-nested'
+			]
 		}],
 		'comment-empty-line-before': ['always', {
 			except: ['first-nested'],
@@ -14,8 +23,15 @@ module.exports = {
 		}],
 		'custom-property-empty-line-before': 'never',
 		'declaration-empty-line-before': 'never',
+
 		'rule-empty-line-before': ['always-multi-line', {
-			// except: ['after-rule', 'inside-block-and-after-rule', 'first-nested']
+			except: [
+				'after-single-line-comment',
+				'first-nested'
+			],
+			ignore: [
+				'after-comment'
+			]
 		}]
 	}
 };
