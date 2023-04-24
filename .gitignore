@@ -39,7 +39,7 @@ yarn-error.log
 .eslintrc.js
 .markdownlint.json
 .php-cs-fixer-rules.json
-.stylelintrc
+.stylelintrc.json
 .eslintignore
 .prettierignore
 .phpunit.result.cache
