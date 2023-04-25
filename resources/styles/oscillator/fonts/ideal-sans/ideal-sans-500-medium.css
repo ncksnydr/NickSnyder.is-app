@@ -1,0 +1,33 @@
+/**
+ * --------------------------------------------------------------------------
+ *   Ideal Sans → Medium (500)
+ * --------------------------------------------------------------------------
+*/
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-Medium.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-Medium.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-Medium.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-Medium.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-Medium.svg#IdealSans-Medium")
+			format("svg");
+	font-style: normal;
+	font-weight: 500;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-MediumItalic.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-MediumItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-MediumItalic.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-MediumItalic.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-MediumItalic.svg#IdealSans-MediumItalic")
+			format("svg");
+	font-style: italic;
+	font-weight: 500;
+	text-rendering: optimizeLegibility;
+}

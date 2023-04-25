@@ -1,0 +1,61 @@
+/**
+ * --------------------------------------------------------------------------
+ *   Ideal Sans → Book (300/400)
+ * --------------------------------------------------------------------------
+*/
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-Book.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-Book.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-Book.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-Book.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-Book.svg#IdealSans-Book")
+			format("svg");
+	font-style: normal;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-BookItalic.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-BookItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-BookItalic.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-BookItalic.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-BookItalic.svg#IdealSans-BookItalic")
+			format("svg");
+	font-style: italic;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-Book.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-Book.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-Book.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-Book.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-Book.svg#IdealSans-Book")
+			format("svg");
+	font-style: normal;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-BookItalic.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-BookItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-BookItalic.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-BookItalic.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-BookItalic.svg#IdealSans-BookItalic")
+			format("svg");
+	font-style: italic;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+}

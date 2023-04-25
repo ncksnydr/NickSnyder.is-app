@@ -4,18 +4,24 @@
  */
 
 module.exports = {
-	arrowParens: "always",
+	arrowParens: 'always',
 	bracketSameLine: true,
 	bracketSpacing: true,
-	endOfLine: "lf",
-	htmlWhitespaceSensitivity: "css",
+	endOfLine: 'lf',
+	htmlWhitespaceSensitivity: 'css',
 	jsxSingleQuote: true,
-	quoteProps: "consistent",
-	singleAttributePerLine: true,
-	useTabs: false,
-	vueIndentScriptAndStyle: true,
+	plugins: [
+		'prettier-plugin-css-order',
+		'@trivago/prettier-plugin-sort-imports',
+		'prettier-plugin-tailwindcss'
+	],
+	quoteProps: 'consistent',
 	semi: true,
+	singleAttributePerLine: true,
 	singleQuote: false,
-	tabWidth: 4,
-	trailingComma: "none"
+	importOrderSeparation: true,
+	tabWidth: 2,
+	trailingComma: 'none',
+	useTabs: true,
+	vueIndentScriptAndStyle: true
 };

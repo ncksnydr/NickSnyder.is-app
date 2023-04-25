@@ -1,0 +1,36 @@
+/**
+	*  Oscillator → Layout → Footer
+	*  @desc The last element on a web page, typically
+	*        containing some sort of navigation, contact
+	*        info, and legal text.
+ */
+
+#mainFooter {
+	background-color: theme(colors.white);
+	position: relative;
+	z-index: theme(zIndex.50);
+}
+
+#mainFooter .container {
+	display: block;
+	padding-bottom: theme(space.8);
+	padding-top: theme(space.8);
+	@media screen(md) {
+		display: flex;
+	}
+	@media screen(lg) {
+		padding-bottom: theme(space.8);
+		padding-top: theme(space.8);
+	}
+}
+
+#mainFooter .icon {
+	svg {
+		height: theme(height.9);
+		width: theme(height.9);
+		@media screen(md) {
+			height: theme(height.6);
+			width: theme(height.6);
+		}
+	}
+}

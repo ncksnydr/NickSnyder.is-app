@@ -1,0 +1,34 @@
+/**
+ * --------------------------------------------------------------------------
+ *   Tofino → Semibold (600)
+ * --------------------------------------------------------------------------
+*/
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-Semibold.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-Semibold.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-Semibold.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-Semibold.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-Semibold.svg#IdealSans-Semibold")
+			format("svg");
+	font-weight: 600;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-SemiboldItalic.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-SemiboldItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-SemiboldItalic.woff2")
+			format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-SemiboldItalic.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-SemiboldItalic.svg#IdealSans-SemiboldItalic")
+			format("svg");
+	font-style: italic;
+	font-weight: 600;
+	text-rendering: optimizeLegibility;
+}

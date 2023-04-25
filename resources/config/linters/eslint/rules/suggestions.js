@@ -23,7 +23,7 @@ module.exports = {
 		"capitalized-comments": "error",
 		"class-methods-use-this": "error",
 		"complexity": [
-			"error",
+			"warn",
 			3
 		],
 		"consistent-return": "error",
@@ -230,7 +230,7 @@ module.exports = {
 			"always"
 		],
 		"prefer-arrow-callback": "error",
-		"prefer-const": "error",
+		"prefer-const": "off",
 		"prefer-destructuring": "off",
 		"prefer-exponentiation-operator": "off",
 		"prefer-named-capture-group": "off",
@@ -267,7 +267,7 @@ module.exports = {
 			}
 		],
 		"sort-keys": [
-			"error",
+			"warn",
 			"asc",
 			{
 				caseSensitive: true,

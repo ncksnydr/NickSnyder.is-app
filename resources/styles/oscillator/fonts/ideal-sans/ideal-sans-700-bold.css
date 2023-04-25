@@ -1,0 +1,33 @@
+/**
+ * --------------------------------------------------------------------------
+ *   Ideal Sans → Bold (700)
+ * --------------------------------------------------------------------------
+*/
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-Bold.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-Bold.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-Bold.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-Bold.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-Bold.svg#IdealSans-Bold")
+			format("svg");
+	font-style: normal;
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-BoldItalic.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-BoldItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-BoldItalic.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-BoldItalic.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-BoldItalic.svg#IdealSans-BoldItalic")
+			format("svg");
+	font-style: italic;
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+}

@@ -4,18 +4,20 @@
  */
 
 module.exports = {
-    overrides: [
-        {
-            files: ['*.css'],
-            options: {
-                parser: 'css'
-            }
-        },
-        {
-            files: ['*.scss'],
-            options: {
-                parser: 'scss'
-            }
-        }
-    ]
+	overrides: [
+		{
+			files: ['*.css'],
+			options: {
+				parser: 'css',
+				order: 'alphabetical'
+			}
+		},
+		{
+			files: ['*.scss'],
+			options: {
+				parser: 'scss',
+				order: 'alphabetical'
+			}
+		}
+	]
 };

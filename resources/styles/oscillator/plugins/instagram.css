@@ -1,0 +1,18 @@
+
+/**
+@see https: //github.com/azat-io/postcss-instagram
+@usage
+<div class="boo"><img src="..." alt=""></div>
+.boo { filter: earlybird; }
+**/
+
+
+.filter-1977 { filter: 1977; }
+.filter-amaro { filter: amaro; }
+.filter-brannan { filter: brannan; }
+.filter-earlybird { filter: earlybird; }
+.filter-inkwell { filter: inkwell; }
+.filter-kalvin { filter: kalvin; }
+.filter-lofi { filter: lofi; }
+.filter-nashville {filter: nashville; }
+.filter-toaster { filter: toaster; }

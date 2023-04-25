@@ -1,13 +1,30 @@
+# --------------------------------------------------------------------------
+#   Git → Ignore file
+#   @see https://www.toptal.com/developers/gitignore
+# --------------------------------------------------------------------------
+
+#   Project → Directories
+# ------------------------------------------------------------
+
+# Temporary → Tailwind config builder
+resources/config/linters/postcss/tailwindcss
+
+# Laravel default
 /node_modules
+/public/assets
 /public/build
 /public/hot
 /public/storage
 /storage/*.key
 /vendor
+
+#   Project → Files
+# ------------------------------------------------------------
+
+# Settings files
 .env
 .env.backup
 .env.production
-.phpunit.result.cache
 Homestead.json
 Homestead.yaml
 auth.json
@@ -17,10 +34,152 @@ yarn-error.log
 /.idea
 /.vscode
 
+# Linter files
 .prettierrc
-.eslintrc
+.eslintrc.js
 .markdownlint.json
 .php-cs-fixer-rules.json
-.stylelintrc
+.stylelintrc.json
 .eslintignore
 .prettierignore
+.phpunit.result.cache
+
+# Font files
+# @note SVG only; other formats are ignored below.
+public/assets/fonts/**/*.svg
+
+#   Gitignore.io
+# ------------------------------------------------------------
+### Audio ###
+*.aif
+*.iff
+*.m3u
+*.m4a
+*.mid
+*.mp3
+*.mpa
+*.ra
+*.wav
+*.wma
+*.ogg
+*.flac
+
+### Images ###
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+
+# JPEG 2000
+*.jp2
+*.j2k
+*.jpf
+*.jpx
+*.jpm
+*.mj2
+
+# JPEG XR
+*.jxr
+*.hdp
+*.wdp
+
+# Graphics Interchange Format
+*.gif
+
+# RAW
+*.raw
+
+# Web P
+*.webp
+
+# Portable Network Graphics
+*.png
+
+# Animated Portable Network Graphics
+*.apng
+
+# Multiple-image Network Graphics
+*.mng
+
+# Tagged Image File Format
+*.tiff
+*.tif
+
+# Portable Document Format
+*.pdf
+
+# X BitMap
+*.xbm
+
+# BMP
+*.bmp
+*.dib
+
+# ICO
+*.ico
+
+# 3D Images
+*.3dm
+*.max
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
+
+### Video ###
+*.3g2
+*.3gp
+*.asf
+*.asx
+*.avi
+*.flv
+*.mkv
+*.mov
+*.mp4
+*.mpg
+*.ogv
+*.rm
+*.swf
+*.vob
+*.wmv
+*.webm
+
+### Font ###
+*.fnt
+*.fon
+*.otf
+*.ttf
+*.eot
+*.woff
+*.woff2
