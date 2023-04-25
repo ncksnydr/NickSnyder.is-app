@@ -1,0 +1,13 @@
+/**
+	*  Oscillator → Layout → Header
+	*  @desc The top-most part of a website that
+	*        typically contains the site logo, a search
+	*        bar, and primary navigation.
+ */
+
+#mainHeader {
+	background: theme(colors.white);
+	box-shadow: 0 0.1875rem 0.1875rem rgba(0, 0, 0, 0.12);
+	position: relative;
+	z-index: theme(zIndex.50);
+}

@@ -1,41 +1,107 @@
-// TODO Create and connect to a basic database.
+/**
+	*  Vite configuration
+	*  @see https://laravel.com/docs/9.x/vite
+	*  @see https://github.com/vite-plugin/vite-plugin-dynamic-import
+	*  @see https://github.com/chengpeiquan/vite-plugin-banner
+	*  @see https://github.com/jeddygong/vite-plugin-progress
+	*  @see https://github.com/alexeyraspopov/picocolors
+	*  @see https://github.com/Ssis53/vite-plugin-zip
+	*  @see https://github.com/fengxinming/vite-plugins/tree/main/packages/vite-plugin-cp
+	*  @see https://github.com/pengzhanbo/vite-plugin-image-placeholder
+ */
 
+// TODO Create shell scripts for moving files (e.g. fonts) and optimizing images.
+
+/**
+ *    Imports
+ * -------------------------------------------------- */
 import banner from 'vite-plugin-banner';
-import { defineConfig } from 'vite';
+import * as dotenv from 'dotenv';
+import dynamicImport from 'vite-plugin-dynamic-import';
 import laravel from 'laravel-vite-plugin';
-// import vue from '@vitejs/plugin-vue';
 import pkg from './package.json';
-import babel from 'vite-plugin-babel';
+import { createLogger, defineConfig } from 'vite';
+import { minify } from 'terser';
+// import { viteZip } from 'vite-plugin-zip-file';
 
-export default defineConfig({
-    plugins: [
+/**
+ *    Variables
+ * -------------------------------------------------- */
+dotenv.config();
+const logger = createLogger();
+const loggerWarn = logger.warn;
+logger.warn = (msg, options) => {
+	// Ignore empty CSS files warning
+	if (msg.includes('vite:css') && msg.includes(' is empty')) return;
+	loggerWarn(msg, options);
+};
 
-        laravel({
-            input: ['resources/css/app.scss', 'resources/js/app.js'],
-            refresh: true,
-        }),
-        // vue({
-        //     template: {
-        //         transformAssetUrls: {
-        //             // The Vue plugin will re-write asset URLs, when referenced
-        //             // in Single File Components, to point to the Laravel web
-        //             // server. Setting this to `null` allows the Laravel plugin
-        //             // to instead re-write asset URLs to point to the Vite
-        //             // server instead.
-        //             base: null,
+/**
+ *    Vite configuration file
+ * -------------------------------------------------- */
+export default defineConfig(({ command, mode, ssrBuild }) => {
+	console.log(`"${process.env.MAIL_USERNAME}"`);
 
-        //             // The Vue plugin will parse absolute URLs and treat them
-        //             // as absolute paths to files on disk. Setting this to
-        //             // `false` will leave absolute URLs un-touched so they can
-        //             // reference assets in the public directory as expected.
-        //             includeAbsolute: false,
-        //         },
-        //     },
-        // }),
-        // babel(),
-    //     banner(
-    //   `/**\n * name: ${pkg.name}\n * version: v${pkg.version}\n * description: ${pkg.description}\n * author: ${pkg.author}\n * homepage: ${pkg.homepage}\n */`
-    // ),
-    ],
+	const config = {
+		css: {
+			devSourcemap: true
+		},
+		customLogger: logger,
+		// optimizeDeps: {
+		// 	include: Object.keys(pkg.dependencies)
+		// },
+		plugins: [
+			dynamicImport(),
+			laravel({
+				input: [
+					'resources/styles/nks.css',
+					'resources/scripts/nks.js'
+				],
+				refresh: true
+			})
+		]
+	};
+
+	// If the command is 'build', alter the default options.
+	if (command === 'build') {
+		// Add build options.
+		// config.build = {
+		// 	assetsDir: 'assets/build',
+		// 	manifest: true,
+		// 	minify: 'terser',
+		// 	outDir: './public',
+		// 	sourcemap: true,
+		// 	ssr: false,
+		// 	ssrManifest: true,
+		// 	target: 'modules',
+		// 	terserOptions: {
+		// 		mangle: true,
+		// 		nameCache: {},
+		// 		sourceMap: true
+		// 	}
+		// };
+
+		// // Add plugin to zip and store project files.
+		// config.plugins.push(
+		// 	viteZip({
+		// 		enabled: true,
+		// 		folderPath: path.resolve(__dirname, 'resources'),
+		// 		outPath: path.resolve(__dirname, 'storage/builds'),
+		// 		zipName: `${pkg.name.toLowerCase()}-${pkg.version}-${new Date().toISOString()}.zip`
+		// 	})
+		// );
+
+		// Add plugin to create build banner.
+		config.plugins.push(
+			banner(`
+				/**\n
+				* name: ${pkg.name}\n
+				* version: v${pkg.version}\n
+				* author: ${pkg.author}\n
+				*/`
+			)
+		);
+	}
+
+	return config;
 });
-

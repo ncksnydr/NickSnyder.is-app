@@ -1,0 +1,16 @@
+/**
+	*  Oscillator → Layout → Page
+	*  @desc Rules that belong to the whole web page
+	*        or rules that are shared by many components.
+ */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	background-color: theme(colors.stone.50);
+}

@@ -1,0 +1,33 @@
+/**
+ * --------------------------------------------------------------------------
+ *   Ideal Sans → Thin (100)
+ * --------------------------------------------------------------------------
+*/
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-Thin.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-Thin.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-Thin.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-Thin.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-Thin.svg#IdealSans-Thin")
+			format("svg");
+	font-style: normal;
+	font-weight: 100;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Ideal Sans SSm A";
+	src: url("/assets/fonts/ideal-sans/IdealSans-ThinItalic.eot");
+	src: url("/assets/fonts/ideal-sans/IdealSans-ThinItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("/assets/fonts/ideal-sans/IdealSans-ThinItalic.woff2") format("woff2"),
+		url("/assets/fonts/ideal-sans/IdealSans-ThinItalic.woff") format("woff"),
+		url("/assets/fonts/ideal-sans/IdealSans-ThinItalic.svg#IdealSans-ThinItalic")
+			format("svg");
+	font-style: italic;
+	font-weight: 100;
+	text-rendering: optimizeLegibility;
+}

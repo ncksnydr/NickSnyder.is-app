@@ -1,0 +1,294 @@
+{
+    "globals": {
+        "colors": {
+            "primary": "#2EB7B0",
+            "secondary": "#575D90",
+            "tertiary": "#F487B6"
+        },
+        "name": {
+            "full": "Nicholas Kazmierz Snyder",
+            "firstName": "Nick",
+            "lastName": "Snyder"
+        },
+        "nav": {
+            "projects": "#projects",
+            "codepen": "https://codepen.io/nicksnyder",
+            "printables": "https://www.printables.com/social/316313-ncksnydr/about",
+            "dribbble": "https://dribbble.com/nicksnyder",
+            "github": {
+                "source": "https://github.com/ncksnydr/NickSnyder.is-app",
+                "profile": "https://github.com/ncksnydr"
+            },
+            "resume": "https://ncksnydr.sfo3.digitaloceanspaces.com/ncksnydr-app/gh/nks-resume.pdf"
+        }
+    },
+    "meta": {
+        "title": "NickSnyder.is",
+        "description": "The portfolio of Seattle-based interactive designer and web developer Nick Snyder.",
+        "image": "nick-snyder-open-graph.jpg"
+    },
+    "hero": {
+        "headline": "Oh hi.<br>My name is Nick.",
+        "subheadline": "I am an interactive designer and web developer who loves creating experiences that help people get things done."
+    },
+    "about": {
+        "bio": "Nick Snyder is interactive designer and full-stack developer with over a decade of experience. He has worked with many Fortune 500 companies, including: Abbvie, Aetna, Amazon, Bank of America, ESPN, Humana, Intuit, Microsoft, and the National Football League. When he's not on the Internet, Nick enjoys playing baseball, recreating movie props, and long-distance running. Although originally from South Jersey, Nick currently lives and works in Seattle, WA.",
+        "image": {
+            "url": "/assets/images/branding/nks.jpg",
+            "alt": "Photo of Nick Snyder with his lovely fiancée, Stephanie."
+        }
+    },
+    "contact": {
+        "copy": "I am currently looking for a full-time opportunity. If you feel that I would make a good fit in your organization, please get in contact by clicking the email address below.<br> <span class=\"block mt-3\">Have a wonderful rest of your day.</span>",
+        "email": {
+            "display": "nick[at]nicksnyder[dot]is",
+            "actual": "nick@nicksnyder.is",
+            "subjectLine": ""
+        }
+    },
+    "projects": {
+        "live": [
+            {
+                "title": "The Halo 5 Effect",
+                "brand": "Microsoft",
+                "client": {
+                    "name": "Tether",
+                    "relationship": "Agency"
+                },
+                "link": {
+                    "url": "https://news.microsoft.com/stories/halo5",
+                    "isWaybackMachine": false
+                },
+                "notes": "A long-form <em>\"featured article\"</em> used to celebrate the launch of Halo 5. Includes stylized photo borders, custom typographic elements, and branded photo carousels.",
+                "image": {
+                    "url": "/assets/images/projects/microsoft-halo5.jpg"
+                }
+            },
+            {
+                "title": "Microsoft: Inside B87",
+                "brand": "Microsoft",
+                "client": {
+                    "name": "Tether",
+                    "relationship": "Agency"
+                },
+                "link": {
+                    "url": "https://news.microsoft.com/stories/building87/",
+                    "isWaybackMachine": false
+                },
+                "notes": "<strong>Notes</strong>: Created to showcase <em>\"the world's quietest room\"</em> where Microsoft conducts sound experiements. Website made with three.js and includes several interactive widgets that make the website feel similar to a museum kiosk. A screenshot of the website was featured in the <em>\"Weekend Update\"</em> segment of <em>Saturday Night Live</em>.",
+                "image": {
+                    "url": "/assets/images/projects/microsoft-b87.jpg"
+                }
+            },
+            {
+                "title": "What If?: The motor that drives machine learning",
+                "brand": "Microsoft",
+                "client": {
+                    "name": "Tether",
+                    "relationship": "Agency"
+                },
+                "link": {
+                    "url": "https://news.microsoft.com/the-motor-that-drives-machine-learning/",
+                    "isWaybackMachine": false
+                },
+                "notes": "A hybrid <em>\"featured article\"</em> and microsite used to highlight Microsoft's advancements in machine learning and encourage recruitment. The collection of <em>\"sub-articles\"</em> was created using a Node.js-based static site generator/CMS that I created for the agency.",
+                "image": {
+                    "url": "/assets/images/projects/microsoft-whatif.jpg"
+                }
+            },
+            {
+                "title": "Female Forward Together",
+                "brand": "Myovant Sciences",
+                "client": {
+                    "name": "Cognition",
+                    "relationship": "Employer"
+                },
+                "link": {
+                    "url": "https://femaleforwardtogether.com/",
+                    "isWaybackMachine": false
+                },
+                "notes": "Created in order to spread awareness and destigmatize menstrual cycles.",
+                "image": {
+                    "url": "/assets/images/projects/cog-fft.jpg"
+                }
+            },
+            {
+                "title": "TimePayment.com",
+                "brand": "TimePayment Corp.",
+                "client": {
+                    "name": "TimePayment Corp.",
+                    "relationship": "Client"
+                },
+                "link": {
+                    "url": "https://timepayment.com",
+                    "isWaybackMachine": false
+                },
+                "notes": "Helped to maintain, update, and upgrade website after agency hand-off. Focus was primiarly enhancing user experience design (UX) for both customers and internal staff. Introduced a WordPress-based page builder to increase production speed of new pages.",
+                "image": {
+                    "url": "/assets/images/projects/timepayment.jpg"
+                }
+            },
+            {
+                "title": "Filium.com",
+                "brand": "NIR",
+                "client": {
+                    "name": "Tether",
+                    "relationship": "Agency"
+                },
+                "link": {
+                    "url": "https://filium.com/",
+                    "isWaybackMachine": false
+                },
+                "notes": "Created to showcase waterproof fabric technology. Features a responsive video header and parallax effects.",
+                "image": {
+                    "url": "/assets/images/projects/tet-filium.jpg"
+                }
+            },
+            {
+                "title": "Hugh MacLeod Connects the Dots",
+                "brand": "Microsoft",
+                "client": {
+                    "name": "Tether",
+                    "relationship": "Agency"
+                },
+                "link": {
+                    "url": "https://news.microsoft.com/stories/hugh-macleod/profile.php",
+                    "isWaybackMachine": false
+                },
+                "notes": "A long-form <em>\"featured article\"</em> showcasing artist Hugh MacLeod. Features an animated header and parallax scrolling effects.",
+                "image": {
+                    "url": "/assets/images/projects/microsoft-hugh.jpg"
+                }
+            },
+            {
+                "title": "Myovant.com",
+                "brand": "Myovant Sciences",
+                "client": {
+                    "name": "Cognition",
+                    "relationship": "Employer"
+                },
+                "link": {
+                    "url": "https://www.myovant.com/",
+                    "isWaybackMachine": false
+                },
+                "notes": "Complete redesign of Myovant.com.",
+                "image": {
+                    "url": "/assets/images/projects/cog-myovant.jpg"
+                }
+            },
+            {
+                "title": "Operation: Silent Knight",
+                "brand": "ETC",
+                "client": {
+                    "name": "ETC",
+                    "relationship": "Employer"
+                },
+                "link": {
+                    "url": "https://www.youtube.com/watch?v=m4laVe6A84o",
+                    "isWaybackMachine": false
+                },
+                "notes": "A <em>\"video Christmas card\"</em> created in lieu of a printed one that is handed out to vendors each year. The video depicts Santa Claus participating in <em>\"flight training\"</em> using the suborbital flight simulator created for <em>Virgin Galactic</em> training. The video was picked up by <em>GeekDad</em>, a blog hosted by Wired.com.",
+                "image": {
+                    "url": "/assets/images/projects/nastar-santa.jpg"
+                }
+            },
+
+            {
+                "title": "NFL Activate",
+                "brand": "NFL",
+                "client": {
+                    "name": "Mad*Pow",
+                    "relationship": "Agency"
+                },
+                "link": {
+                    "url": "https://web.archive.org/web/20150512142904/http://nflactivate.com/",
+                    "isWaybackMachine": true
+                },
+                "notes": "Allowed commercial sponsors of NFL events to review impressions receieved after the air of events, including: NFL Draft, NFL Kickoff, and Super Bowl. To help manage the final numbers and quickly turn-around results, I created a simple content management system (CMS), which I dubbed Touchdown. For my work, I was given a letter of praise—sent to the agency—from NFL corporate.",
+                "image": {
+                    "url": "/assets/images/projects/mp-nfl-activate.jpg"
+                }
+            },
+            {
+                "title": "SAVES Club",
+                "brand": "Safariland",
+                "client": {
+                    "name": "Tether",
+                    "relationship": "Agency"
+                },
+                "link": {
+                    "url": "https://web.archive.org/web/20171001040452/http://www.safariland.com/saves-posts/#sm.0000bexft71avdevsub7656zck5wn",
+                    "isWaybackMachine": true
+                },
+                "notes": "Utilized several parallax techniques and a custom video-to-image video scrubber to showcase the internal features of Safariland's protective vest for law enforcement. Subtle animations are used in the background, as well, to give the site more visual interest.",
+                "image": {
+                    "url": "/assets/images/projects/tet-saves-club.jpg"
+                }
+            },
+            {
+                "title": "Amazon: reInvent",
+                "brand": "Amazon",
+                "client": {
+                    "name": "Tether",
+                    "relationship": "Agency"
+                },
+                "link": {
+                    "url": "https://web.archive.org/web/20160901004514/http://reinvent.awsevents.com/",
+                    "isWaybackMachine": true
+                },
+                "notes": "This project utilized a static site generator that I created using Node.js, allowing for a up-to-the-minute, consistent changes while maintaining the speed and simplicity of a static website.",
+                "image": {
+                    "url": "/assets/images/projects/tet-reinvent.jpg"
+                }
+            },
+            {
+                "title": "Microsoft Design",
+                "brand": "Microsoft",
+                "client": {
+                    "name": "Tether",
+                    "relationship": "Agency"
+                },
+                "link": {
+                    "url": "https://web.archive.org/web/20160102131545/https://www.microsoft.com/en-us/design/",
+                    "isWaybackMachine": true
+                },
+                "notes": "Created as a tool for Microsoft to showcase their current designers and recruit new designers.",
+                "image": {
+                    "url": "/assets/images/projects/microsoft-design.jpg"
+                }
+            },
+            {
+                "title": "ESPN Event Wrap-Ups",
+                "brand": "ESPN",
+                "client": {
+                    "name": "Mad*Pow",
+                    "relationship": "Agency"
+                },
+                "link": {
+                    "url": "https://web.archive.org/web/20140517040640/http://espneventwrapups.com/",
+                    "isWaybackMachine": true
+                },
+                "notes": "Hosted public impressions and ratings of ESPN events (X Games, ESPYs, Bowl College Series, NEXT) to demonstrate value and ROI to advertisers.",
+                "image": {
+                    "url": "/assets/images/projects/mp-espn-ewu.jpg"
+                }
+            },
+            {
+                "title": "Welcome to Aetna",
+                "brand": "Aetna",
+                "client": {
+                    "name": "Mad*Pow",
+                    "relationship": "Agency"
+                },
+                "link": {
+                    "url": "https://web.archive.org/web/20180823202531/https://www.welcometoaetna.com//",
+                    "isWaybackMachine": true
+                },
+                "notes": "Created to help new members of Aetna navigate and understand services provided by Aetna.",
+                "image": {
+                    "url": "/assets/images/projects/mp-aetna.jpg"
+                }
+            }
+        ]
+    }
+}

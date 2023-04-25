@@ -1,0 +1,151 @@
+/**
+	*  Oscillator → Elements → Type styles 
+	*  @desc Collection of typographic styles.
+ */
+
+/**
+ *    Globals
+ * -------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt {
+	font-family: theme(fontFamily.sans);
+}
+
+body,
+p,
+li,
+dd,
+span,
+em,
+strong {
+	font-family: theme(fontFamily.serif);
+	font-weight: theme(fontWeight.regular);
+}
+
+/**
+ *    Headlines
+ * -------------------------------------------------- */
+
+/** --- Navigation ------ */
+
+.nav-item {
+	color: theme(colors.slate.700);
+	font-family: theme(fontFamily.sans);
+	font-size: theme(fontSize.sm);
+	font-weight: theme(fontWeight.regular);
+	letter-spacing: theme(letterSpacing.wide);
+	line-height: theme(lineHeight.6);
+}
+
+#mobileMenu .nav-item {
+	@apply -mx-3;
+	color: theme("colors.gray.900");
+	display: block;
+	font-size: theme("fontSize.21");
+	line-height: theme("lineHeight.7");
+	padding-bottom: theme("spacing.2");
+	padding-left: theme("spacing.3");
+	padding-right: theme("spacing.3");
+	padding-top: theme("spacing.2");
+
+	&:hover {
+		background: theme(colors.primary.400);
+	}
+}
+
+#desktopMenu .nav-item {
+	@apply transition-colors hover:text-primary-500;
+}
+
+/** --- Headline (H1) ------ */
+
+.headline,
+.h1 {
+	color: theme("colors.primary.900");
+	font-size: theme(fontSize.36);
+	font-weight: theme("fontWeight.semibold");
+	line-height: theme("lineHeight.tight");
+	@media screen(lg) {
+		font-size: theme("fontSize.42");
+	}
+}
+
+/** --- Subheadline (H2) ------ */
+
+.subheadline,
+.h2 {
+	color: theme("colors.primary.900");
+	font-size: theme(fontSize.24);
+	font-weight: theme("fontWeight.semibold");
+	line-height: theme("lineHeight.tight");
+	@media screen(lg) {
+		font-size: theme("fontSize.27");
+	}
+}
+
+/**
+ *    Body copy
+ * -------------------------------------------------- */
+
+.hero-copy {
+	color: theme("colors.primary.900");
+	font-family: theme("fontFamily.serif");
+	font-size: theme("fontSize.21");
+	font-weight: theme("fontWeight.book");
+	line-height: theme("lineHeight.10");
+	@media screen(md) {
+		font-size: theme("fontSize.24");
+	}
+	@media screen(lg) {
+		font-size: theme("fontSize.27");
+		line-height: theme(lineHeight.relaxed);
+	}
+}
+
+/**
+ *    Navigation items (and variations)
+ * -------------------------------------------------- */
+
+/**
+ *    Headline
+ * -------------------------------------------------- */
+
+/**
+ *    Copyright/Legal text
+ * -------------------------------------------------- */
+
+.copyright {
+	color: theme(colors.gray.500);
+	font-family: theme(fontFamily.serif);
+	font-size: theme(fontSize.15);
+	font-style: italic;
+	line-height: theme(lineHeight.5);
+	text-align: center;
+	@media screen(lg) {
+		font-size: theme(fontSize.13);
+	}
+}
+
+/**
+ *    Category header
+ * -------------------------------------------------- */
+
+.category-header {
+	font-size: theme("fontSize.xs");
+	font-weight: theme("fontWeight.black");
+	letter-spacing: 0.18rem;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.category-credit {
+	font-size: theme("fontSize.lg");
+	font-style: italic;
+	font-weight: theme("fontWeight.light");
+}
