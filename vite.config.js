@@ -16,6 +16,7 @@
  *    Imports
  * -------------------------------------------------- */
 import banner from 'vite-plugin-banner';
+import * as dotenv from 'dotenv';
 import dynamicImport from 'vite-plugin-dynamic-import';
 import laravel from 'laravel-vite-plugin';
 import pkg from './package.json';
@@ -26,6 +27,7 @@ import { minify } from 'terser';
 /**
  *    Variables
  * -------------------------------------------------- */
+dotenv.config();
 const logger = createLogger();
 const loggerWarn = logger.warn;
 logger.warn = (msg, options) => {
@@ -38,14 +40,16 @@ logger.warn = (msg, options) => {
  *    Vite configuration file
  * -------------------------------------------------- */
 export default defineConfig(({ command, mode, ssrBuild }) => {
+	console.log(`"${process.env.MAIL_USERNAME}"`);
+
 	const config = {
 		css: {
 			devSourcemap: true
 		},
 		customLogger: logger,
-		optimizeDeps: {
-			include: Object.keys(pkg.dependencies)
-		},
+		// optimizeDeps: {
+		// 	include: Object.keys(pkg.dependencies)
+		// },
 		plugins: [
 			dynamicImport(),
 			laravel({

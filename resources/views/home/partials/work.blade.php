@@ -1,18 +1,15 @@
-<section id="work">
-	<div class="container-grid grid-cols-2 gap-4">
+<section id="projects">
+	<div class="container-grid grid-cols-1">
 			@foreach ($projects['live'] as $item)
 
-				<article class="card grid grid-cols-2 z-10">
+				<article class="card max-w-4xl lg:w-full mx-auto text-center grid grid-cols-1 mb-12 md:grid-cols-2 md:text-left z-10">
 			
-				<div class="card-image">
-					<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80">
+				<div class="card-image bg-cover" style="min-height: 400px; width: 100%;background-image: url('{{ $item->image->url }}')">
 				</div>
 
-				 <section class="card-data">
-
-					
-							<h3 class="card-title mb-6">{{ $item->title }}</h4>
-							<div class="grid grid-cols-2">
+				<section class="card-data">
+					<h3 class="card-title mb-6 text-center md:text-left">{{ $item->title }}</h4>
+							<div class="grid text-center grid-cols-2 md:text-left">
 								<dl>
 									<dt class="category-header">Brand</dt>
 									<dd class="category-credit">{{ $item->brand }}</dd>
@@ -26,15 +23,13 @@
 						
 
 
-					<a href="{{ $item->link->url }}" class="btn btn-primary" target="_blank">
-				
+					<a href="{{ $item->link->url }}" class="inline-block btn btn-primary mt-6 mx-auto" target="_blank">
 					@if ($item->link->isWaybackMachine)
-						View archived project via WaybackMachine.
+						View archived project via WaybackMachine
 					@else
 						View project
 					@endif
 					</a>
-
 				 </section>
 				</article>
 				{{-- @include('components/card') --}}

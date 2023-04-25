@@ -15,5 +15,6 @@
 			@yield('content')
 			@include('layouts.components.footer')
 		</main>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 	</body>
 </html>

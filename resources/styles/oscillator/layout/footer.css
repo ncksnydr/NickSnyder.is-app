@@ -6,6 +6,7 @@
  */
 
 #mainFooter {
+	background-color: theme(colors.white);
 	position: relative;
 	z-index: theme(zIndex.50);
 }

@@ -19,7 +19,7 @@
 						<a href="{{ $globals->nav->projects }}" class="nav-item">Projects</a>
 						<a href="{{ $globals->nav->resume }}" class="nav-item">Resume</a>
 						<a href="{{ $globals->nav->dribbble }}" class="nav-item">Design samples</a>
-						<a href="{{ $globals->nav->codepen }}" class="nav-item">Code samples</a>
+						{{-- <a href="{{ $globals->nav->codepen }}" class="nav-item">Code samples</a> --}}
 						<a href="{{ $globals->nav->github->source }}" class="nav-item">View source</a>
           </div>
         </div>

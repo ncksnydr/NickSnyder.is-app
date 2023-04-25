@@ -17,7 +17,8 @@
     },
     "dependencies": {
         "enquire.js": "^2.1.6",
-        "lodash": "^4.17.19"
+        "lodash": "^4.17.19",
+        "sendmail": "^1.6.1"
     },
     "devDependencies": {
         "@prettier/plugin-php": "^0.19.4",
@@ -31,12 +32,12 @@
         "color": "^4.2.3",
         "cssnano": "^6.0.0",
         "cssnano-preset-advanced": "^6.0.0",
+        "dotenv": "^16.0.3",
         "eslint": "^8.36.0",
         "eslint-config-standard": "^17.0.0",
         "eslint-plugin-import": "^2.27.5",
         "eslint-plugin-n": "^15.6.1",
         "eslint-plugin-promise": "^6.1.1",
-        "fs": "^0.0.1-security",
         "glob": "^9.3.0",
         "laravel-vite-plugin": "^0.7.2",
         "normalize.css": "^8.0.1",

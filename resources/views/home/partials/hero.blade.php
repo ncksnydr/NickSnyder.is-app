@@ -14,8 +14,8 @@
 
     <div class="mx-auto max-w-2xl py-12 sm:py-9 lg:pt-24 lg:pb-12">
       <div class="text-center">
-        <h1 class="headline">{!! $hero->headline !!}</h1>
-        <p class="mt-6 subheadline">{!! $hero->subheadline !!}</p>
+        <h1 class="headline mb-6">{!! $hero->headline !!}</h1>
+        <p class="hero-copy">{!! $hero->subheadline !!}</p>
       </div>
     </div>
 		

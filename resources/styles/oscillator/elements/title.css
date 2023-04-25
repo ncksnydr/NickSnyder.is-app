@@ -81,6 +81,20 @@ strong {
 .subheadline,
 .h2 {
 	color: theme("colors.primary.900");
+	font-size: theme(fontSize.24);
+	font-weight: theme("fontWeight.semibold");
+	line-height: theme("lineHeight.tight");
+	@media screen(lg) {
+		font-size: theme("fontSize.27");
+	}
+}
+
+/**
+ *    Body copy
+ * -------------------------------------------------- */
+
+.hero-copy {
+	color: theme("colors.primary.900");
 	font-family: theme("fontFamily.serif");
 	font-size: theme("fontSize.21");
 	font-weight: theme("fontWeight.book");
@@ -93,10 +107,6 @@ strong {
 		line-height: theme(lineHeight.relaxed);
 	}
 }
-
-/**
- *    Body copy
- * -------------------------------------------------- */
 
 /**
  *    Navigation items (and variations)
