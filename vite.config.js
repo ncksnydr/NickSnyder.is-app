@@ -21,8 +21,6 @@ import dynamicImport from 'vite-plugin-dynamic-import';
 import laravel from 'laravel-vite-plugin';
 import pkg from './package.json';
 import { createLogger, defineConfig } from 'vite';
-import { minify } from 'terser';
-// import { viteZip } from 'vite-plugin-zip-file';
 
 /**
  *    Variables
@@ -40,16 +38,15 @@ logger.warn = (msg, options) => {
  *    Vite configuration file
  * -------------------------------------------------- */
 export default defineConfig(({ command, mode, ssrBuild }) => {
-	console.log(`"${process.env.MAIL_USERNAME}"`);
 
 	const config = {
 		css: {
 			devSourcemap: true
 		},
 		customLogger: logger,
-		// optimizeDeps: {
-		// 	include: Object.keys(pkg.dependencies)
-		// },
+		optimizeDeps: {
+			include: Object.keys(pkg.dependencies)
+		},
 		plugins: [
 			dynamicImport(),
 			laravel({
@@ -64,33 +61,6 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
 
 	// If the command is 'build', alter the default options.
 	if (command === 'build') {
-		// Add build options.
-		// config.build = {
-		// 	assetsDir: 'assets/build',
-		// 	manifest: true,
-		// 	minify: 'terser',
-		// 	outDir: './public',
-		// 	sourcemap: true,
-		// 	ssr: false,
-		// 	ssrManifest: true,
-		// 	target: 'modules',
-		// 	terserOptions: {
-		// 		mangle: true,
-		// 		nameCache: {},
-		// 		sourceMap: true
-		// 	}
-		// };
-
-		// // Add plugin to zip and store project files.
-		// config.plugins.push(
-		// 	viteZip({
-		// 		enabled: true,
-		// 		folderPath: path.resolve(__dirname, 'resources'),
-		// 		outPath: path.resolve(__dirname, 'storage/builds'),
-		// 		zipName: `${pkg.name.toLowerCase()}-${pkg.version}-${new Date().toISOString()}.zip`
-		// 	})
-		// );
-
 		// Add plugin to create build banner.
 		config.plugins.push(
 			banner(`

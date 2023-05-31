@@ -12,7 +12,8 @@ const config = {
 	content: [
 		'./resources/**/*.blade.php',
 		'./resources/**/*.js',
-		'./resources/**/*.vue'
+		'./resources/**/*.vue',
+		'!./resources/config/**'
 	],
 	corePlugins: {
 		aspectRatio: false

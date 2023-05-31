@@ -1,0 +1,96 @@
+#!/usr/bin/env zsh
+
+# --------------------------------------------------------------------------
+#   Bump version
+#   @desc Bumps both the `npm` and `git` versions.
+#		@param --major Bump to next major version.
+#		@param --minor Bump to next minor version.
+#		@param --patch Bump to next patch version.
+#		@see https://semver.org/
+# --------------------------------------------------------------------------
+
+#   Imports
+# ------------------------------------------------------------
+
+source ./editor-config
+
+#   Methods
+# ------------------------------------------------------------
+
+#  help
+#  Provide a usage manual for the user.
+#  @function
+#
+help() {
+	e-header "bump-version HELP"
+	e-underline "${black}Usage${reset}"
+	printf "${bold}${white}npm run bump-version -- [--patch] [--minor 'TAG MESSAGE'] [--major 'TAG MESSAGE']${reset}\n"
+	printf "\n\n"
+	exit 1
+}
+
+#  error
+#  Creates a error message to the user.
+#  @function
+#  @param [String] Custom error message.
+#
+error() {
+	e-error "$1"
+	exit 1
+}
+
+#  bump-npm
+#  Increases the current version of the NPM package.
+#  @function
+#  @param [String] $LEVEL  User-set level for increase.
+#  @param [String] $MSG    Tag message describing the increase; required for --minor and --major.
+#
+bump-npm() {
+	e-task "Bumping NPM version..."
+	if [[ -z "$MSG" ]]; then
+		npm version $LEVEL
+	else
+		npm version $LEVEL -m $MSG
+	fi
+}
+
+#   Run program
+# ------------------------------------------------------------
+
+# If the user did not add a flag, send them to help().
+if [[ -z $1 ]]; then
+	help
+fi
+
+while [[ ! -z $1 ]]; do
+	ARG="$1"
+	MSG="$2"
+	LEVEL="${ARG//-/}"
+	shift
+	case "$ARG" in
+		-h)
+			help
+			;;
+		--help)
+			help
+			;;
+		-m)
+			help
+			;;
+		--man)
+			help
+			;;
+		--major)
+			bump-npm
+			e-success "NPM and Git $LEVEL versions bumped"
+			;;
+		--minor)
+			bump-npm
+			e-success "NPM and Git $LEVEL versions bumped"
+			;;
+		--patch)
+			bump-npm
+			e-success "NPM $LEVEL version bumped."
+			;;
+	esac
+done
