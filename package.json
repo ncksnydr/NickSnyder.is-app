@@ -13,10 +13,11 @@
         "build-linter-prettier": "npx run-func ./resources/config/helpers/buildLinterConfig.js prettier",
         "build-linter-phpcsfixer": "npx run-func ./resources/config/helpers/buildLinterConfig.js phpCsFixer",
         "build-linter-stylelint": "npx run-func ./resources/config/helpers/buildLinterConfig.js stylelint",
-        "bump-version": "bash $PWD/bump-version",
+        "bump-version": "bash $PWD/resources/config/shell/bump-version",
         "bump:major": "npm run bump-version -- --major",
         "bump:minor": "npm run bump-version -- --minor",
         "bump:patch": "npm run bump-version -- --patch",
+        "init": "bash $PWD/resources/config/shell/init",
         "preview": "vite preview"
     },
     "dependencies": {
