@@ -1,0 +1,43 @@
+/**
+ * --------------------------------------------------------------------------
+ *   Tofino → Ultra (900)
+ *   @see https://alannamunro.com/fonts/tofino/
+ * --------------------------------------------------------------------------
+*/
+
+
+@font-face {
+  font-family: "Tofino";
+  src: url("/assets/fonts/tofino/Tofino-Ultra.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/tofino/Tofino-Ultra.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("/assets/fonts/tofino/Tofino-Ultra.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("/assets/fonts/tofino/Tofino-Ultra.ttf")
+      format("truetype"),
+    url("/assets/fonts/tofino/Tofino-Ultra.svg#Tofino-Ultra")
+      format("svg"); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Tofino";
+  src: url("/assets/fonts/tofino/Tofino-UltraItalic.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/tofino/Tofino-UltraItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/tofino/Tofino-UltraItalic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("/assets/fonts/tofino/Tofino-UltraItalic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/assets/fonts/tofino/Tofino-UltraItalic.svg#Tofino-UltraItalic")
+      format("svg"); /* Legacy iOS */
+  font-style: italic;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
+}

@@ -1,0 +1,35 @@
+# --------------------------------------------------------------------------
+#   Initialize project
+# --------------------------------------------------------------------------
+
+#   Import
+# ------------------------------------------------------------
+source ./editor-config
+
+#   Intro
+# ------------------------------------------------------------
+e-intro "Initialize Laravel project"
+
+#   Install dependencies
+# ------------------------------------------------------------
+e-task "Installing dependencies..."
+composer install
+npm install
+
+#   Create .env file
+# ------------------------------------------------------------
+e-task "Creating .env file..."
+cp env.example .env
+
+#   Build linter configuration files.
+# ------------------------------------------------------------
+e-task "Building linter configuration files..."
+npm run build-linter-eslint
+npm run build-linter-markdown
+npm run build-linter-prettier
+npm run build-linter-phpcsfixer
+npm run build-linter-stylelint
+
+#   Exit
+# ------------------------------------------------------------
+e-success "Initialization completed. Please remember to update the default values in the .env file."

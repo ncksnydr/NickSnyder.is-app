@@ -19,8 +19,8 @@
 		display: flex;
 	}
 	@media screen(lg) {
-		padding-bottom: theme(space.8);
-		padding-top: theme(space.8);
+		padding-bottom: theme(space.5);
+		padding-top: theme(space.5);
 	}
 }
 
