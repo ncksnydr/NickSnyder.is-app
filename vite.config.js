@@ -40,6 +40,10 @@ logger.warn = (msg, options) => {
 export default defineConfig(({ command, mode, ssrBuild }) => {
 
 	const config = {
+		build: {
+			assetsDir: 'assets',
+			outDir: 'public/build'
+		},
 		css: {
 			devSourcemap: true
 		},

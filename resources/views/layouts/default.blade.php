@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 	<head>
-	
 		@env('production')
 			@include('layouts.partials.analytics')
 		@endenv
-
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		@include('layouts.partials.seo')
@@ -20,6 +18,5 @@
 			@yield('content')
 			@include('layouts.components.footer')
 		</main>
-		<script src="https://smtpjs.com/v3/smtp.js"></script>
 	</body>
 </html>

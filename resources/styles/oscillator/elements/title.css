@@ -89,6 +89,19 @@ strong {
 	}
 }
 
+/** --- Code request ------ */
+
+.code-request-copy {
+	color: theme("colors.primary.900");
+	font-size: theme(fontSize.16);
+	font-style: italic;
+	font-weight: theme(fontWeight.normal);
+	line-height: theme("lineHeight.tight");
+	@media screen(lg) {
+		font-size: theme(fontSize.18);
+	}
+}
+
 /**
  *    Body copy
  * -------------------------------------------------- */
@@ -137,15 +150,17 @@ strong {
  * -------------------------------------------------- */
 
 .category-header {
-	font-size: theme("fontSize.xs");
+	font-size: theme(fontSize.12);
 	font-weight: theme("fontWeight.black");
-	letter-spacing: 0.18rem;
+	letter-spacing: 0.09rem;
 	line-height: 1;
 	text-transform: uppercase;
 }
 
 .category-credit {
-	font-size: theme("fontSize.lg");
+	font-size: theme(fontSize.18);
 	font-style: italic;
 	font-weight: theme("fontWeight.light");
+	position: relative;
+	transform: translateX(-3px);
 }

@@ -13,8 +13,8 @@
 	max-width: theme(maxWidth.7xl);
 	padding: theme(space.6);
 	@media screen(lg) {
-		padding-bottom: theme(space.5);
-		padding-top: theme(space.5);
+		padding-bottom: theme(space.3);
+		padding-top: theme(space.3);
 	}
 }
 
