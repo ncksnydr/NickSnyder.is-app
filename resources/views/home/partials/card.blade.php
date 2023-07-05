@@ -1,32 +1,35 @@
+<article class="card max-w-4xl lg:w-full mx-auto text-center grid grid-cols-1 mb-12 md:grid-cols-2 md:text-left z-10">
+	<div class="card-image bg-cover" style="min-height: 400px; width: 100%;background-image: url('{{ $item->image->url }}')"></div>
+	<section class="card-data">
+		<h1 class="card-title mb-6 text-center md:text-left">{{ $item->title }}</h1>
 
-
-
-
-
-
-
-
-{{-- 
-    <div class="sm:mb-10 lg:grid lg:grid-cols-5 md:grid-cols-none md:bg-gray-300 bg-gray-300 lg:bg-white lg:h-full">
+		<div class="text-center grid grid-cols-2 md:text-left lg:block">
+			<dl class="lg:inline-block mr-9">
+				<dt class="category-header">Brand</dt>
+				<dd class="category-credit">{{ $item->brand }}</dd>
+			</dl>
+			<dl class="lg:inline-block">
+				<dt class="category-header">{{ $item->client->relationship }}</dt>
+				<dd class="category-credit">{{ $item->client->name }}</dd>
+			</dl>
+		</div>
 		
-			<div class="hidden relative lg:block  lg:col-span-2">
-        <img class="absolute inset-0 w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="Ad- woman on a beach">
-      </div>
+		<p class="card-description">{!! $item->notes !!}</p>
+						
+		<a href="{{ $item->link->url }}" class="inline-flex btn btn-primary mt-6 mx-auto" target="_blank">
+			@if ($item->link->isWaybackMachine)
+				<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M32 32H480c17.7 0 32 14.3 32 32V96c0 17.7-14.3 32-32 32H32C14.3 128 0 113.7 0 96V64C0 46.3 14.3 32 32 32zm0 128H480V416c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V160zm128 80c0 8.8 7.2 16 16 16H336c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16z"/></svg>
+			@endif
+			View project
+		</a>
 
-      <div class=" px-10 py-10 max-w-md m-auto lg:col-span-3 mt-20 mb-20 shadow-xl rounded-xl lg:mt-10 md:shadow-xl md:rounded-xl lg:shadow-none lg:rounded-none lg:w-full lg:mb-10 lg:px-5 lg:pt-5 lg:pb-5 lg:max-w-lg bg-white">
+		@if ($item->link->isWaybackMachine)
+			<p class="inline-block mt-4 leading-5">
+				<small>
+					This project has been archived by the owner, but is available via <em>The Wayback Machine</em>. A live demo is available by request.
+				</small>
+			</p>		
+		@endif
 
-				<img class="h-64 sm:h-52 sm:w-full sm:object-cover lg:hidden object-center mt-2 rounded-lg shadow-2xl" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="Ad- woman on a beach">
-      
-			  <h4 class='font-medium text-2xl mb-3'>{{ $item->title }}</h4>
-							<dl>
-								<dt>Brand:</dt>
-								<dd>{{ $item->brand }}</dd>
-								<dt>{{ $item->client->relationship }}:</dt>
-								<dd>{{ $item->client->name }}</dd>
-							</dl>
-							<p class="text-sm text-grey block mt-6">{!! $item->notes !!}</p>
-							<a class='-m-4 w-12 h-12 bg-blue-dark flex items-center justify-center text-center no-underline rounded-full text-white hover:bg-blue-darker absolute pin-t pin-r' href='{{ $item->link->url }}'></a>
-      </div>
-
-      
-    </div> --}}
+	</section>
+</article>

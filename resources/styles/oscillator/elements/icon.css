@@ -28,3 +28,14 @@
 		width: theme(width.9);
 	}
 }
+
+.nav-icon {
+	color: theme("colors.gray.400");
+	height: auto;
+	margin: 0 9px;
+	width: 1.15em;
+
+	&:hover {
+		color: theme("colors.primary.500");
+	}
+}

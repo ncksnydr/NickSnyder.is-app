@@ -16,11 +16,14 @@
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y divide-gray-500/10">
           <div class="space-y-2 py-6">
-						<a href="{{ $globals->nav->projects }}" class="nav-item">Projects</a>
-						<a href="{{ $globals->nav->resume }}" class="nav-item">Resume</a>
-						<a href="{{ $globals->nav->dribbble }}" class="nav-item">Design samples</a>
-						{{-- <a href="{{ $globals->nav->codepen }}" class="nav-item">Code samples</a> --}}
-						<a href="{{ $globals->nav->github->source }}" class="nav-item">View source</a>
+						<a href="{{ $links->nav->projects }}" class="nav-item" target="_blank">Projects</a>
+						<a href="{{ $links->nav->resume }}" class="nav-item" target="_blank">Resume</a>
+						<a href="{{ $links->nav->about }}" class="nav-item" target="_blank">About</a>
+
+						<a href="{{ $links->social->linkedin }}" class="nav-item" target="_blank">LinkedIn</a>
+						<a href="{{ $links->social->github }}" class="nav-item" target="_blank">GitHub</a>
+						<a href="{{ $links->social->codepen }}" class="nav-item" target="_blank">CodePen</a>
+						<a href="{{ $links->social->dribbble }}" class="nav-item" target="_blank">Dribbble</a>
           </div>
         </div>
       </div>

@@ -41,8 +41,8 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
 
 	const config = {
 		build: {
-			assetsDir: '.',
-			outDir: 'public/assets/build'
+			assetsDir: 'assets',
+			outDir: 'public/build'
 		},
 		css: {
 			devSourcemap: true

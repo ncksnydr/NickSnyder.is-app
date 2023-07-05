@@ -12,7 +12,7 @@
         "lastName": "Snyder"
       },
       "email": "nick@nicksnyder.is",
-      "bio": "Nick Snyder is interactive designer and full-stack developer with over a decade of experience. He has worked with many Fortune 500 companies, including: Abbvie, Aetna, Amazon, Bank of America, ESPN, Humana, Intuit, Microsoft, and the National Football League. When he's not on the Internet, Nick enjoys playing baseball, recreating movie props, and long-distance running. Although originally from South Jersey, Nick currently lives and works in Seattle, WA.",
+      "bio": "Nick Snyder is a front-end developer with a passion for crafting visually stunning and user-friendly websites. With fifteen years of experience using HTML, CSS, and JavaScript, Nick leverages his skills to create immersive digital experiences that captivate and engage users. Nick has worked with many Fortune 500 brands, including: Abbvie, Aetna, Amazon, Bank of America, ESPN, Humana, Intuit, Microsoft, and the National Football League. In his free time, Nick enjoys playing baseball, hiking, and laying in hammocks.",
       "avatar": {
         "url": "/assets/images/branding/nks3.jpg",
         "alt": "Photo of Nick Snyder with his lovely fiancée, Stephanie."
@@ -22,27 +22,29 @@
       "email": "nick@nicksnyder.is",
       "nav": {
         "projects": "#projects",
-        "contact": "#contact",
+        "about": "#about",
         "resume": "https://ncksnydr.sfo3.digitaloceanspaces.com/ncksnydr-app/gh/nks-resume.pdf",
-        "source-code": "https://github.com/ncksnydr/NickSnyder.is-app"
+        "sourceCode": "https://github.com/ncksnydr/NickSnyder.is-app"
       },
       "social": {
         "codepen": "https://codepen.io/nicksnyder",
         "dribbble": "https://dribbble.com/nicksnyder",
         "github": "https://github.com/ncksnydr",
-        "printables": "https://www.printables.com/social/316313-ncksnydr/about"
+        "linkedin": "https://www.linkedin.com/in/ncksnydr/"
       }
     },
     "meta": {
       "title": "NickSnyder.is",
-      "description": "The portfolio of Seattle-based interactive designer and web developer Nick Snyder.",
+      "description": "The portfolio of Seattle-based Front-End Developer & UX Designer Nick Snyder.",
       "image": "nick-snyder-open-graph.jpg"
     }
   },
   "sections": {
     "hero": {
       "headline": "Oh hi.<br>My name is Nick.",
-      "subheadline": "I am an interactive designer and web developer who loves creating experiences that help people get things done."
+      "subheadline": "I am a Front-End Developer & UX Designer with a passion for crafting visually stunning and user-friendly digital experiences.",
+			"codeRequest": "Source code for the client projects below are available upon request."
+
     },
     "contact": {
       "copy": "I am currently looking for a full-time opportunity. If you feel that I would make a good fit in your organization, please get in contact by clicking the email address below.<br> <span class=\"block mt-3\">Have a wonderful rest of your day.</span>",
@@ -116,9 +118,9 @@
         },
         {
           "title": "TimePayment.com",
-          "brand": "TimePayment Corp.",
+          "brand": "TimePayment",
           "client": {
-            "name": "TimePayment Corp.",
+            "name": "TimePayment",
             "relationship": "Client"
           },
           "link": {
@@ -177,8 +179,10 @@
           "image": {
             "url": "/assets/images/projects/cog-myovant.jpg"
           }
-        },
-        {
+        }
+      ],
+      "archived": [
+				{
           "title": "Operation: Silent Knight",
           "brand": "ETC",
           "client": {
@@ -193,9 +197,7 @@
           "image": {
             "url": "/assets/images/projects/nastar-santa.jpg"
           }
-        }
-      ],
-      "archived": [
+        },
         {
           "title": "NFL Activate",
           "brand": "NFL",
